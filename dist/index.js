@@ -3,6 +3,7 @@ function mnb(name, age = 7) {
     console.log(name + ' ' + age);
 }
 mnb("Melton", 6);
+console.log("from another");
 let employee = {
     id: 1,
     name: "Melton",
@@ -10,14 +11,6 @@ let employee = {
         console.log(date);
     }
 };
-function melton(age) {
-    if (typeof age === 'number')
-        return age * 2;
-    else {
-        return parseInt(age) * 2;
-    }
-}
-console.log(melton('10'));
 let work = {
     name: "Melton",
     address: "xxx",
@@ -28,6 +21,11 @@ let work = {
 };
 console.log(work);
 function greet(name) {
-    console.log(name);
+    if (typeof name === "number") {
+        console.log(name);
+    }
+    if (typeof name === "string") {
+        console.log(name);
+    }
 }
 greet("haiiiii");

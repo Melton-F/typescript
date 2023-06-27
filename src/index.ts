@@ -8,6 +8,7 @@ type Employee = {
     name : string,
     retire : (date:Date)=> void
 }
+console.log("from another")
 
 let employee : Employee = {
     id : 1,
@@ -17,15 +18,14 @@ let employee : Employee = {
     }
 }
 
-function melton (age:number | string):number{
-    if(typeof age === 'number')
-        return age *2
-    else{
-        return parseInt(age) * 2
-    }
-}
-console.log(melton('10'))
-
+// function melton (age:number | string):number{
+//     if(typeof age === 'number')
+//         return age *2
+//     else{
+//         return parseInt(age) * 2
+//     }
+// }
+// console.log(melton('10'))
 
 //Intersection typesx
 type User = {
